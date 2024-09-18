@@ -44,3 +44,29 @@
 // int minutes = totalMinutes % 60;
 // Console.WriteLine($"{totalMinutes} {(totalMinutes <= 1 ? "minute" : "minutes")} = {hours} {(hours <= 1 ? "hour" : "hours")} and {minutes} {(minutes <= 1 ? "minute" : "minutes")}");
 #endregion
+
+#region Ex4:  Tính số tiền sau khi đã thêm VAT
+// using System.Globalization;
+
+// Console.Write("Enter the original amount: ");
+// decimal originalAmount = Convert.ToDecimal(Console.ReadLine());
+// if (originalAmount < 0)
+// {
+//     Console.WriteLine("Invalid amount...!");
+//     return;
+// }
+// if(originalAmount == 0) {
+//     Console.WriteLine("It's free....!");
+//     return;
+// }
+// Console.Write("Enter the VATE rate(%): ");
+// decimal vate = Convert.ToDecimal(Console.ReadLine());
+// if (vate < 0)
+// {
+//     Console.WriteLine("Invalid VATE rate...!");
+//     return;
+// }
+// decimal totalAmount = originalAmount * (1 + vate/100);
+// CultureInfo cul = new CultureInfo("vi-VN");
+// Console.WriteLine($"Total amount after adding {vate}% VAT is: {totalAmount.ToString("C", cul)}");
+#endregion
