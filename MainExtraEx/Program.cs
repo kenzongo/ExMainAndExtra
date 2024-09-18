@@ -153,3 +153,40 @@
 // }
 // Console.WriteLine($"{speedKmh} km/h = {speedKmh/3.6:F2} m/s");
 #endregion
+
+#region Ex10: Tính lượng calo tiêu thụ
+// double minute;
+// int choose;
+// double calPerMinute;
+// while (true)
+// {
+//     Console.Write("Enter the number of minutes: ");
+//     if (double.TryParse(Console.ReadLine(), out minute) && minute > 0)
+//     {
+//         break;
+//     }
+//     Console.WriteLine("Invalid input. Please enter a valid positive number.");
+// }
+// Console.WriteLine("Choose the type of exercise:");
+// Console.WriteLine("1. Running (10 cal/min)");
+// Console.WriteLine("2. Cycling (15 cal/min)");
+// Console.WriteLine("3. Swimming (20 cal/min)");
+// while (true)
+// {
+//     Console.Write("Enter the exercise type (1-3): ");
+//     if(int.TryParse(Console.ReadLine(), out choose) && choose >= 1 && choose <=3) {
+//         break;
+//     }
+//     Console.WriteLine("Invalid input. Please enter a valid number (1-3).");
+// }
+// calPerMinute = choose switch
+// {
+//     1 => 10,
+//     2 => 15,
+//     3 => 20,
+//     _ => 0
+// };
+
+// double caloriseBurned = calPerMinute * minute;
+// Console.WriteLine($"Result = {caloriseBurned:F2} calo");
+#endregion
