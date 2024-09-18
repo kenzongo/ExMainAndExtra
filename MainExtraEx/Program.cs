@@ -117,3 +117,21 @@
 // CultureInfo curVn = new CultureInfo("vi-VN");
 // Console.WriteLine($"Your remaining balance after withdrawal is: {remainingBalance.ToString("C", curVn)}");
 #endregion
+
+#region  Ex7: Tính tốc độ trung bình
+// Console.Write("Enter the distance traveled (km): ");
+// double distances = Convert.ToDouble(Console.ReadLine());
+// if(distances < 0) {
+//     Console.WriteLine("Invalid distance...!");
+//     return;
+// }
+// Console.Write("Enter the time taken (hour): ");
+// double time = Convert.ToDouble(Console.ReadLine());
+// if(time <= 0) {
+//     Console.WriteLine("Invalid time...!");
+//     return;
+// }
+// double averageSpeed = distances / time;
+// Console.Write($"The average speed is: {averageSpeed:F2} km/h");
+#endregion
+
