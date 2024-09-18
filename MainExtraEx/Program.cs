@@ -93,3 +93,27 @@
 // Console.WriteLine($"{usdAmount:C} equivalent to {vndAmount.ToString("C", vndCur)}");
 #endregion
 
+//Extra
+#region Ex6: Tính số dư sau khi rút tiền từ tài khoản
+// using System.Globalization;
+
+// Console.Write("Current account balance: ");
+// decimal curBalance = Convert.ToDecimal(Console.ReadLine());
+// if(curBalance < 0) {
+//     Console.WriteLine("Invalid Balance...!");
+//     return;
+// }
+// Console.Write("Amount to withdraw: ");
+// decimal withdraw = Convert.ToDecimal(Console.ReadLine());
+// if(withdraw <= 0) {
+//     Console.WriteLine("Withdrawal amount must be greater than 0.");
+//     return;  
+// }
+// if(withdraw > curBalance) {
+//     Console.WriteLine("Withdrawal amount must be less than or equal to balance.");
+//     return;
+// }
+// decimal remainingBalance = curBalance - withdraw;
+// CultureInfo curVn = new CultureInfo("vi-VN");
+// Console.WriteLine($"Your remaining balance after withdrawal is: {remainingBalance.ToString("C", curVn)}");
+#endregion
