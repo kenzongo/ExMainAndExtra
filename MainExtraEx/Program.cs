@@ -70,3 +70,26 @@
 // CultureInfo cul = new CultureInfo("vi-VN");
 // Console.WriteLine($"Total amount after adding {vate}% VAT is: {totalAmount.ToString("C", cul)}");
 #endregion
+
+#region  Ex5: Chuyển đổi đơn vị tiền tệ
+// using System.Globalization;
+
+// Console.Write("Enter the amount in USD: ");
+// decimal usdAmount = Convert.ToDecimal(Console.ReadLine());
+// if (usdAmount < 1)
+// {
+//     Console.WriteLine("Please enter amount greater than 0...!");
+//     return;
+// }
+// Console.Write("Enter the exchange rate: ");
+// decimal exchangeRate = Convert.ToDecimal(Console.ReadLine());
+// if (exchangeRate < 1)
+// {
+//     Console.WriteLine("Please enter exchange rate greater than 0...!");
+//     return;
+// }
+// decimal vndAmount = usdAmount * exchangeRate;
+// CultureInfo vndCur = new CultureInfo("vi-VN");
+// Console.WriteLine($"{usdAmount:C} equivalent to {vndAmount.ToString("C", vndCur)}");
+#endregion
+
