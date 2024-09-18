@@ -135,3 +135,12 @@
 // Console.Write($"The average speed is: {averageSpeed:F2} km/h");
 #endregion
 
+#region Ex8: Tính tỉ lệ %
+// Console.Write("Enter the number: ");
+// double number = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Enter the total: ");
+// double total = Convert.ToDouble(Console.ReadLine());
+// string percentage = total == 0 ? "Infinity" : (number / total * 100).ToString();
+// Console.WriteLine($"The percentage is: {percentage:F2} {(total == 0 ? "" : "%")}");
+#endregion
+
