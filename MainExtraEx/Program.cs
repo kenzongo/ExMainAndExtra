@@ -144,3 +144,12 @@
 // Console.WriteLine($"The percentage is: {percentage:F2} {(total == 0 ? "" : "%")}");
 #endregion
 
+#region Ex9: Đổi từ km/h -> m/s
+// Console.Write("Enter the speed in km/h: ");
+// double speedKmh = Convert.ToDouble(Console.ReadLine());
+// if(speedKmh < 1) {
+//     Console.WriteLine("Please enter speed greater than 0.");
+//     return;
+// }
+// Console.WriteLine($"{speedKmh} km/h = {speedKmh/3.6:F2} m/s");
+#endregion
