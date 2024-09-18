@@ -32,3 +32,15 @@
 //     Console.WriteLine($"Discount Amount: {discountAmount.ToString("C", vnCurrency)}\nAmount after discount: {amountAfterDiscount.ToString("C", vnCurrency)}");
 // }
 #endregion
+
+#region Ex3: Chuyển đổi thời gian từ phứt sang giờ và phút. Ex: 130p = 2h and 10p 
+// Console.Write("Enter the number of minutes: ");
+// int totalMinutes = Convert.ToInt32(Console.ReadLine());
+// if(totalMinutes < 1) {
+//     Console.WriteLine("Invalid minutes...!");
+//     return;
+// }
+// int hours = totalMinutes / 60;
+// int minutes = totalMinutes % 60;
+// Console.WriteLine($"{totalMinutes} {(totalMinutes <= 1 ? "minute" : "minutes")} = {hours} {(hours <= 1 ? "hour" : "hours")} and {minutes} {(minutes <= 1 ? "minute" : "minutes")}");
+#endregion
