@@ -1,15 +1,35 @@
 ﻿// Main Excercise
 #region Ex1: Tính số ngày trong tuần và số ngày lẻ
-// Console.WriteLine("Enter number of days:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// if (num <= 0)
+// while (true)
 // {
-//     Console.WriteLine("Invalid day!!!");
-//     return;
+//     Console.Write("Enter number of days: ");
+//     string? input = Console.ReadLine();
+//     try
+//     {
+//         if (string.IsNullOrEmpty(input))
+//             throw new ArgumentNullException(input, "Input cannot be null or empty.");
+//         int num = int.Parse(input);
+//         if(num <= 0) {
+//             Console.WriteLine("Invalid day...!");
+//             continue;
+//         }
+//         int weeks = num / 7;
+//         int remainingdays = num % 7;
+//         Console.WriteLine($"{num} {(num <= 1 ? "day" : "days")} equals {weeks} {(weeks <= 1 ? "week" : "weeks")} and {remainingdays} {(remainingdays <= 1 ? "day" : "days")} ");
+//         break;
+//     }
+//     catch (ArgumentNullException e)
+//     {
+//         Console.WriteLine(e.Message);
+//     }
+//     catch (FormatException) {
+//         Console.WriteLine("Pleae enter a valid integer number...!");
+//     }
+//     catch (Exception e)
+//     {
+//         Console.WriteLine($"An unexpected error occurred : {e.Message}");
+//     }
 // }
-// int weeks = num / 7;
-// int remainingdays = num % 7;
-// Console.WriteLine($"{num} {(num <= 1 ? "day" : "days")} equals {weeks} {(weeks <= 1 ? "week" : "weeks")} and {remainingdays} {(remainingdays <= 1 ? "day" : "days")} ");
 #endregion
 
 #region Ex2: Tính tổng giá trị đơn hàng sau khi áp dụng giảm giá
