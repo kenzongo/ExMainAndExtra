@@ -34,22 +34,22 @@
 
 #region Ex2: Tính tổng giá trị đơn hàng sau khi áp dụng giảm giá
 // using System.Globalization;
-
-// Console.Write("Enter order value: ");
-// decimal orderValue = Convert.ToDecimal(Console.ReadLine());
-// if(orderValue < 0) {
-//     Console.WriteLine("Invalid order value... !!!");
-//     return;
-// }
-// if(orderValue == 0) Console.WriteLine("Order free...");
-// else {
+// //Using TryParse
+// decimal orderValue;
+// do
+// {
+//     Console.Write("Enter order value: ");
+// } while (!decimal.TryParse(Console.ReadLine(), out orderValue) || orderValue < 0);
+// if (orderValue == 0) Console.WriteLine("Order free...");
+// else
+// {
 //     Console.Write("Enter discount percentage(%): ");
 //     decimal discountPercentage = Convert.ToDecimal(Console.ReadLine());
 //     discountPercentage = Math.Clamp(discountPercentage, 0, 100); // Limit 0-100, if < 0 set = 0, > 100 set = 100
 //     decimal discountAmount = orderValue * discountPercentage / 100;
 //     decimal amountAfterDiscount = orderValue - discountAmount;
 //     CultureInfo vnCurrency = new CultureInfo("vi-VN");
-//     Console.WriteLine($"Discount Amount: {discountAmount.ToString("C", vnCurrency)}\nAmount after discount: {amountAfterDiscount.ToString("C", vnCurrency)}");
+//     Console.WriteLine($"Discount Amount: {discountAmount}\nAmount after discount: {amountAfterDiscount}");
 // }
 #endregion
 
