@@ -54,15 +54,43 @@
 #endregion
 
 #region Ex3: Chuyển đổi thời gian từ phứt sang giờ và phút. Ex: 130p = 2h and 10p 
-// Console.Write("Enter the number of minutes: ");
-// int totalMinutes = Convert.ToInt32(Console.ReadLine());
-// if(totalMinutes < 1) {
-//     Console.WriteLine("Invalid minutes...!");
-//     return;
+// while (true)
+// {
+//     Console.Write("Enter the number of minutes: ");
+//     string? input = Console.ReadLine();
+//     string result;
+//     try
+//     {
+//         if (string.IsNullOrEmpty(input))
+//         {
+//             throw new ArgumentNullException(input, "Input cannot be null or empty.");
+//         }
+//         int totalMinutes = int.Parse(input);
+//         if(totalMinutes < 1) {
+//             throw new IndexOutOfRangeException("Please enter the minute greater than 0.");
+//         }
+//         int hours = totalMinutes / 60;
+//         int minutes = totalMinutes % 60;
+//         Console.WriteLine($"{totalMinutes} {(totalMinutes <= 1 ? "minute" : "minutes")} = {hours} {(hours <= 1 ? "hour" : "hours")} and {minutes} {(minutes <= 1 ? "minute" : "minutes")}");
+//         break;
+//     }
+//     catch (ArgumentNullException e)
+//     {
+//         result = e.Message;
+//     }
+//     catch (FormatException)
+//     {
+//         result = "Please enter the valid number...!";
+//     }
+//     catch (IndexOutOfRangeException e) {
+//         result = e.Message;
+//     }
+//     catch (Exception e)
+//     {
+//         result = $"An unexpected error occurred : {e.Message}";
+//     }
+//     Console.WriteLine(result);
 // }
-// int hours = totalMinutes / 60;
-// int minutes = totalMinutes % 60;
-// Console.WriteLine($"{totalMinutes} {(totalMinutes <= 1 ? "minute" : "minutes")} = {hours} {(hours <= 1 ? "hour" : "hours")} and {minutes} {(minutes <= 1 ? "minute" : "minutes")}");
 #endregion
 
 #region Ex4:  Tính số tiền sau khi đã thêm VAT
