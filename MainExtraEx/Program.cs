@@ -311,12 +311,38 @@
 #endregion
 
 #region Ex8: Tính tỉ lệ %
-// Console.Write("Enter the number: ");
-// double number = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Enter the total: ");
-// double total = Convert.ToDouble(Console.ReadLine());
+// double number;
+// double total;
+
+// while(true) {
+//     Console.Write("Enter the number: ");
+//     string? input = Console.ReadLine();
+//     if(string.IsNullOrEmpty(input)) {
+//         Console.WriteLine("Number cannot be null or empty.");
+//         continue;
+//     }
+//     if(!double.TryParse(input, out number)) {
+//         Console.WriteLine("Please enter the valid number.!");
+//         continue;
+//     }
+//     break;
+// }
+// while(true) {
+//     Console.Write("Enter the total: ");
+//     string? input = Console.ReadLine();
+//     if(string.IsNullOrEmpty(input)) {
+//         Console.WriteLine("Total cannot be null or empty.");
+//         continue;
+//     }
+//     if(!double.TryParse(input, out total)) {
+//         Console.WriteLine("Please enter the valid number.!");
+//         continue;
+//     }
+//     break;
+// }
 // string percentage = total == 0 ? "Infinity" : (number / total * 100).ToString();
-// Console.WriteLine($"The percentage is: {percentage:F2} {(total == 0 ? "" : "%")}");
+
+// Console.WriteLine($"The percentage is: {(double.TryParse(percentage, out double numOfPercentage) ? numOfPercentage : percentage):F2} {(total == 0 ? "" : "%")}");
 #endregion
 
 #region Ex9: Đổi từ km/h -> m/s
