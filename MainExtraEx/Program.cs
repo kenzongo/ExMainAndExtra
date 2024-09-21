@@ -346,13 +346,40 @@
 #endregion
 
 #region Ex9: Đổi từ km/h -> m/s
-// Console.Write("Enter the speed in km/h: ");
-// double speedKmh = Convert.ToDouble(Console.ReadLine());
-// if(speedKmh < 1) {
-//     Console.WriteLine("Please enter speed greater than 0.");
-//     return;
+// //Using try catch
+// while (true)
+// {
+//     Console.Write("Enter the speed in km/h: ");
+//     string? input = Console.ReadLine();
+//     string message = "";
+//     try
+//     {
+//         if (string.IsNullOrEmpty(input))
+//         {
+//             throw new ArgumentNullException(input, "Speed cannot null or empty.");
+//         }
+//         double speedKmh = double.Parse(input);
+//         if (speedKmh < 1)
+//         {
+//             Console.WriteLine("Please enter speed greater than 0.");
+//             continue;
+//         }
+//         Console.WriteLine($"{speedKmh} km/h = {speedKmh / 3.6:F2} m/s");
+//         break;
+//     }
+//     catch (ArgumentNullException e)
+//     {
+//         message = e.Message;
+//     } catch (FormatException e)
+//     {
+//         message = e.Message;
+//     }
+//     catch (Exception e)
+//     {
+//         message = $"An unpected error occured: {e.Message}";
+//     }
+//     Console.WriteLine(message);
 // }
-// Console.WriteLine($"{speedKmh} km/h = {speedKmh/3.6:F2} m/s");
 #endregion
 
 #region Ex10: Tính lượng calo tiêu thụ
