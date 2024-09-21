@@ -95,50 +95,61 @@
 
 #region Ex4:  Tính số tiền sau khi đã thêm VAT
 // using System.Globalization;
-
-// Console.Write("Enter the original amount: ");
-// decimal originalAmount = Convert.ToDecimal(Console.ReadLine());
-// if (originalAmount < 0)
+// decimal original;
+// decimal vate;
+// while (true)
 // {
-//     Console.WriteLine("Invalid amount...!");
-//     return;
+//     Console.Write("Enter the original amount: ");
+//     string? input = Console.ReadLine();
+//     if (string.IsNullOrEmpty(input))
+//     {
+//         Console.WriteLine("Amount cannot null or empty");
+//         continue;
+//     }
+//     if (!decimal.TryParse(input, out original))
+//     {
+//         Console.WriteLine("Please enter the valid number...!");
+//         continue;
+//     }
+//     if (original < 0)
+//     {
+//         Console.WriteLine("Please enter amount greater than or equal to 0...!");
+//         continue;
+//     }
+//     break;
 // }
-// if(originalAmount == 0) {
+// if (original > 0)
+// {
+//     while (true)
+//     {
+//         Console.Write("Enter the VATE rate(%): ");
+//         string? input = Console.ReadLine();
+//         if (string.IsNullOrEmpty(input))
+//         {
+//             Console.WriteLine("VATE cannot null or empty");
+//             continue;
+//         }
+//         if (!decimal.TryParse(input, out vate))
+//         {
+//             Console.WriteLine("Please enter the valid number...!");
+//             continue;
+//         }
+//         if (vate < 0)
+//         {
+//             Console.WriteLine("Please enter amount greater than or equal to 0...!");
+//             continue;
+//         }
+//         vate = Math.Clamp(vate, 0, 100);
+//         break;
+//     }
+// }
+// else {
 //     Console.WriteLine("It's free....!");
 //     return;
 // }
-// Console.Write("Enter the VATE rate(%): ");
-// decimal vate = Convert.ToDecimal(Console.ReadLine());
-// if (vate < 0)
-// {
-//     Console.WriteLine("Invalid VATE rate...!");
-//     return;
-// }
-// decimal totalAmount = originalAmount * (1 + vate/100);
-// CultureInfo cul = new CultureInfo("vi-VN");
+// decimal totalAmount = original * (1 + vate / 100);
+// CultureInfo cul = new("vi-VN");
 // Console.WriteLine($"Total amount after adding {vate}% VAT is: {totalAmount.ToString("C", cul)}");
-#endregion
-
-#region  Ex5: Chuyển đổi đơn vị tiền tệ
-// using System.Globalization;
-
-// Console.Write("Enter the amount in USD: ");
-// decimal usdAmount = Convert.ToDecimal(Console.ReadLine());
-// if (usdAmount < 1)
-// {
-//     Console.WriteLine("Please enter amount greater than 0...!");
-//     return;
-// }
-// Console.Write("Enter the exchange rate: ");
-// decimal exchangeRate = Convert.ToDecimal(Console.ReadLine());
-// if (exchangeRate < 1)
-// {
-//     Console.WriteLine("Please enter exchange rate greater than 0...!");
-//     return;
-// }
-// decimal vndAmount = usdAmount * exchangeRate;
-// CultureInfo vndCur = new CultureInfo("vi-VN");
-// Console.WriteLine($"{usdAmount:C} equivalent to {vndAmount.ToString("C", vndCur)}");
 #endregion
 
 //Extra
