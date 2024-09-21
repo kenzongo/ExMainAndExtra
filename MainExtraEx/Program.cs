@@ -259,20 +259,55 @@
 #endregion
 
 #region  Ex7: Tính tốc độ trung bình
-// Console.Write("Enter the distance traveled (km): ");
-// double distances = Convert.ToDouble(Console.ReadLine());
-// if(distances < 0) {
-//     Console.WriteLine("Invalid distance...!");
-//     return;
+// double distances;
+// double time;
+// string averageSpeed;
+// while (true)
+// {
+//     Console.Write("Enter the distance traveled (km): ");
+//     string? input = Console.ReadLine();
+//     if (string.IsNullOrEmpty(input))
+//     {
+//         Console.WriteLine("Distance cannot be null or empty.");
+//         continue;
+//     }
+//     if (!double.TryParse(input, out distances))
+//     {
+//         Console.WriteLine("Please input the valid positive number...!!");
+//         continue;
+//     }
+//     if (distances < 0)
+//     {
+//         Console.WriteLine("Invalid distance....!");
+//         continue;
+//     }
+//     break;
 // }
-// Console.Write("Enter the time taken (hour): ");
-// double time = Convert.ToDouble(Console.ReadLine());
-// if(time <= 0) {
-//     Console.WriteLine("Invalid time...!");
-//     return;
+// while (true)
+// {
+//     Console.Write("Enter the time taken (hour): ");
+//     string? input = Console.ReadLine();
+//     if (string.IsNullOrEmpty(input))
+//     {
+//         Console.WriteLine("Time cannot be null or empty.");
+//         continue;
+//     }
+//     if (!double.TryParse(input, out time))
+//     {
+//         Console.WriteLine("Please input the valid positive number...!");
+//         continue;
+//     }
+//     if (time <= 0)
+//     {
+//         Console.WriteLine("Invalid time...!");
+//         continue;
+//     }
+//     break;
 // }
-// double averageSpeed = distances / time;
-// Console.Write($"The average speed is: {averageSpeed:F2} km/h");
+// if (time > 0) averageSpeed = (distances / time).ToString();
+// else averageSpeed = "Infinity";
+// bool parseSuccess = double.TryParse(averageSpeed, out double numOfAverageSpeed);
+// Console.Write($"The average speed is: {(parseSuccess ? numOfAverageSpeed : averageSpeed):F2} km/h");
 #endregion
 
 #region Ex8: Tính tỉ lệ %
