@@ -202,25 +202,59 @@
 //Extra
 #region Ex6: Tính số dư sau khi rút tiền từ tài khoản
 // using System.Globalization;
+// decimal curBalance;
+// decimal withdraw;
+// while (true)
+// {
+//     Console.Write("Current account balance: ");
+//     string? input = Console.ReadLine();
+//     if (string.IsNullOrEmpty(input))
+//     {
+//         Console.WriteLine("Current balance cannot be null or empty.");
+//         continue;
+//     }
+//     if (!decimal.TryParse(input, out curBalance))
+//     {
+//         Console.WriteLine("Please enter the valid number...!");
+//         continue;
+//     }
+//     if (curBalance < 0)
+//     {
+//         Console.WriteLine("Invalid Balance...!");
+//         continue;
+//     }
+//     break;
+// }
 
-// Console.Write("Current account balance: ");
-// decimal curBalance = Convert.ToDecimal(Console.ReadLine());
-// if(curBalance < 0) {
-//     Console.WriteLine("Invalid Balance...!");
-//     return;
-// }
-// Console.Write("Amount to withdraw: ");
-// decimal withdraw = Convert.ToDecimal(Console.ReadLine());
-// if(withdraw <= 0) {
-//     Console.WriteLine("Withdrawal amount must be greater than 0.");
-//     return;  
-// }
-// if(withdraw > curBalance) {
-//     Console.WriteLine("Withdrawal amount must be less than or equal to balance.");
-//     return;
+// while (true)
+// {
+//     Console.Write("Amount to withdraw: ");
+//     string? input = Console.ReadLine();
+//     if (string.IsNullOrEmpty(input))
+//     {
+//         Console.WriteLine("The amount to withdraw cannot be null or empty.");
+//         continue;
+//     }
+//     if (!decimal.TryParse(input, out withdraw))
+//     {
+//         Console.WriteLine("Please enter the valid number...!");
+//         continue;
+//     }
+//     if (withdraw <= 0)
+//     {
+//         Console.WriteLine("Withdrawal amount must be greater than 0.");
+//         continue;
+//     }
+//     if (withdraw > curBalance)
+//     {
+//         Console.WriteLine("Withdrawal amount must be less than or equal to balance.");
+//         continue;
+//     }
+//     break;
+
 // }
 // decimal remainingBalance = curBalance - withdraw;
-// CultureInfo curVn = new CultureInfo("vi-VN");
+// CultureInfo curVn = new("vi-VN");
 // Console.WriteLine($"Your remaining balance after withdrawal is: {remainingBalance.ToString("C", curVn)}");
 #endregion
 
