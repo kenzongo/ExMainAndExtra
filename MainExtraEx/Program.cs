@@ -152,6 +152,53 @@
 // Console.WriteLine($"Total amount after adding {vate}% VAT is: {totalAmount.ToString("C", cul)}");
 #endregion
 
+#region  Ex5: Chuyển đổi đơn vị tiền tệ
+using System.Globalization;
+decimal usdAmount;
+decimal exchangeRate;
+while (true)
+{
+    Console.Write("Enter the amount in USD: ");
+    string? input = Console.ReadLine();
+    if (string.IsNullOrEmpty(input))
+    {
+        Console.WriteLine("Amount cannot be null or empty.");
+        continue;
+    }
+    if (!decimal.TryParse(input, out usdAmount))
+    {
+        Console.WriteLine("Please enter the valid number...!");
+        continue;
+    }
+    if (usdAmount < 1)
+    {
+        Console.WriteLine("Please enter amount greater than 0...!");
+        continue;
+    }
+    break;
+}
+while (true) {
+    Console.Write("Enter the exchange rate: ");
+    string? input = Console.ReadLine();
+    if(string.IsNullOrEmpty(input)) {
+        Console.WriteLine("Exchange rate cannot be null or empty.");
+        continue;
+    }
+    if(!decimal.TryParse(input, out exchangeRate)) {
+        Console.WriteLine("Please enter the valid number...!");
+        continue;
+    }
+    if(exchangeRate < 1) {
+        Console.WriteLine("Please enter amount greater than 0...!");
+        continue;
+    }
+    break ;
+}
+decimal vndAmount = usdAmount * exchangeRate;
+CultureInfo vndCur = new ("vi-VN");
+Console.WriteLine($"{usdAmount:C} equivalent to {vndAmount.ToString("C", vndCur)}");
+#endregion
+
 //Extra
 #region Ex6: Tính số dư sau khi rút tiền từ tài khoản
 // using System.Globalization;
